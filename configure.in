@@ -1,0 +1,33 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(src/defines.h)
+AM_INIT_AUTOMAKE(wayv, `cat VERSION`)
+AM_CONFIG_HEADER(config.h)
+
+dnl Checks for programs.
+AC_PROG_CC
+AC_PROG_INSTALL
+
+dnl Checks for header files.
+AC_PATH_XTRA
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS(sys/time.h unistd.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_TIME
+
+dnl Checks for libraries.
+AC_CHECK_LIB(X11, XOpenDisplay, X_LIBS="$X_LIBS -lX11",
+	AC_MSG_ERROR([Cannot find X11 library]), $X_LIBS)
+AC_CHECK_LIB(Xext, XQueryExtension, AC_DEFINE(HAVE_X_EXTENSION), , $X_LIBS)
+AC_CHECK_LIB(Xtst, XTestFakeKeyEvent, AC_DEFINE(HAVE_X_TEST) X_LIBS="$X_LIBS -lXtst", , $X_LIBS)
+
+dnl Checks for library functions.
+AC_TYPE_SIGNAL
+AC_CHECK_FUNCS(gettimeofday strdup)
+
+AC_SUBST(x_includes)
+AC_SUBST(x_libraries)
+AC_SUBST(datadir)
+
+AC_OUTPUT(src/Makefile doc/Makefile Makefile)

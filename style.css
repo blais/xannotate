@@ -1,0 +1,7 @@
+@import url("/docutils-style.css");
+@import url("/project-header.css");
+
+div#project-header {
+  background-image: url("etc/header-chalkboard.jpg");
+}
+
