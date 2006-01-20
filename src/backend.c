@@ -52,7 +52,8 @@ int main(int argc, char **argv) {
   setupPointer(wayv, video, 1);
 
   /* Setup to listen to the escape key */
-  KeyCode esckc = XKeysymToKeycode( video->display, XK_Escape );
+  /* KeyCode esckc = XKeysymToKeycode( video->display, XK_Escape ); */
+  KeyCode esckc = AnyKey;
 
   Window win;
   if(wayv->pretty->display[0] != 'i')
