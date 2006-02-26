@@ -2,3 +2,10 @@
 TODO: xannotate
 ===============
 
+- the drawing should use dynamics like the spring-mass drawing program from
+  P.Haeberli
+
+- we could have algorithms that analyze the image to construct blocks
+  automatically
+
+- drawing should be more subtle than XOR
