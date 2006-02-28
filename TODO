@@ -2,6 +2,8 @@
 TODO: xannotate
 ===============
 
+- convert to Python using PyGame and PIL
+
 - the drawing should use dynamics like the spring-mass drawing program from
   P.Haeberli
 
