@@ -2,6 +2,9 @@
 TODO: xannotate
 ===============
 
+- Try to rewrite xannotate but using PyGame and PIL, with a mass-spring
+  system
+
 - convert to Python using PyGame and PIL
 
 - the drawing should use dynamics like the spring-mass drawing program from
