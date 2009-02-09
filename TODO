@@ -2,6 +2,11 @@
 TODO: xannotate
 ===============
 
+
+- Modify xannotate to exit on any key and not send back the key on the Escape
+
+- Make lines wider
+
 - Try to rewrite xannotate but using PyGame and PIL, with a mass-spring
   system
 
