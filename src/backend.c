@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
   wayv->pretty->display = "yes";
   wayv->pretty->managed = "no";
   wayv->pretty->color = "ff0056";
-  wayv->pretty->size = 2;
+  wayv->pretty->size = 5; /* Width of the line */
   wayv->pretty->feedback = "yes";
   wayv->pretty->wait = DEF_PRETTY_WAIT;
 
@@ -52,8 +52,8 @@ int main(int argc, char **argv) {
   setupPointer(wayv, video, 1);
 
   /* Setup to listen to the escape key */
-  /* KeyCode esckc = XKeysymToKeycode( video->display, XK_Escape ); */
-  KeyCode esckc = AnyKey;
+  KeyCode esckc = XKeysymToKeycode( video->display, XK_Escape );
+  /* KeyCode esckc = AnyKey; doesn't work with X_GrabKey anymore, see man page. */ 
 
   Window win;
   if(wayv->pretty->display[0] != 'i')
