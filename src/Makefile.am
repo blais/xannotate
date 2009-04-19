@@ -8,6 +8,6 @@ xannotate_SOURCES = backend.c display.c process.c
 # gesture.c 
 # setup.c 
 # misc.c
-CFLAGS = -Wall -O2 -DSETUPPATH=\"@datadir@\"
+AM_CFLAGS = -Wall -O2 -DSETUPPATH=\"@datadir@\"
 xannotate_LDADD = @X_LIBS@
 xannotate_LDFLAGS = -I@x_includes@ -L@x_libraries@

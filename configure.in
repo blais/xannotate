@@ -30,4 +30,4 @@ AC_SUBST(x_includes)
 AC_SUBST(x_libraries)
 AC_SUBST(datadir)
 
-AC_OUTPUT(src/Makefile doc/Makefile Makefile)
+AC_OUTPUT(src/Makefile Makefile)
