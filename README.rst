@@ -1,6 +1,6 @@
-=====================================
-xannotate: Xlib Transparent Annotator
-=====================================
+============================================
+xannotate: Xlib Transparent Screen Annotator
+============================================
 
 .. contents:: Table of Contents
 
@@ -32,9 +32,9 @@ this during a demo.
 Download
 ========
 
-A Mercurial repository can be found at:
+A Git repository can be found at:
 
-  http://bitbucket.org/blais/xannotate
+  http://github.com/blais/xannotate
 
 
 External Links
