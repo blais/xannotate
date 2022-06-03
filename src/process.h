@@ -23,7 +23,7 @@
 #ifndef __PROCESS_H__
 #define __PROCESS_H__
 
-int child;
+extern int child;
 
 void setupSignals();
 void destroyZombies(int);

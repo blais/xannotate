@@ -29,6 +29,8 @@
 #include "defines.h"
 #include "process.h"
 
+extern int child;
+
 /*
  * Purpose:
  *	Setup signal handlers for wayV - only manage SIGCHLD at this
